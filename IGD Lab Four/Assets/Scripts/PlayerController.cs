@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public LayerMask checkGround;
 
     public Text scoreText;
+    public Text highScoreText;
 
     private Rigidbody2D playerBody;
     private Collider2D playerCollider;
