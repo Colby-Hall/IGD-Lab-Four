@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class PlatformKiller : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject platDeathPoint;
+    
+
     void Start()
     {
-        
+        platDeathPoint = GameObject.Find("PlatformDeathPoint");
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
-        
+        if (transform.position.x < platDeathPoint.transform.position.x)
+        {
+            Destroy(gameObject);
+        }
     }
 }
