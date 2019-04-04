@@ -33,5 +33,7 @@ public class PlayerController : MonoBehaviour
         {
             playerBody.velocity = new Vector2(playerBody.velocity.x, jumpStrength);
         }
+
+        playerAnimator.SetBool("Grounded", grounded);
     }
 }
